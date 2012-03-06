@@ -1,14 +1,17 @@
 \documentclass[a4paper]{article}
+\usepackage{mathtools}
 \usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{SIunits}
 
 \begin{document}
 \title{Nuclear Disarmament Verification}
 \author{Aldridge, Barritt, Christodoulou, Lu, \\
 	Moors, Rajroop, Theodorou, Xiao, \\
-	Department of Physics and Astronomy, \\
-	University College London, \\
-	London WC1E 6BT, \\
-	United Kingdom}
+\small	Department of Physics and Astronomy, \\
+\small	University College London, \\
+\small	London WC1E 6BT, \\
+\small	United Kingdom}
 \date{2012 March 06\textsuperscript{th}}
 \maketitle
 
@@ -49,15 +52,316 @@ Valentino’s Muon Tomography
 
 \section{Introduction}
 \subsection{Sample Section}
-Here is a sample statement, of which I shall 
-include the most well known equation of all. 
-Indeed, the irony is that this equation is 
-intimately related to our group project. 
-\[ 
-E = \gamma m_0 c^2
-\]
+Here is a sample statement. \[ E = \gamma m_0 c^2 \]
 
 \section{Political Background}
 \subsection{Treaties}
+
+\section{Detection Schemes}
+\subsection{Passive Detection}
+\subsection{Active Detection}
+
+\subsection{Muon Tomography}
+\subsubsection{Cosmic Rays}
+Cosmic rays are a flux of high energy particles that bombard the earth’s atmosphere. They are
+produced in other parts of the universe and approximately 98\% of these particles are protons or
+heavier nuclei and 2\% are electrons. These cosmic rays collide with air molecules and produce a
+shower of particles that include protons, neutrons, electrons, positrons, photons, kaons and pions
+(both neutral and charged). These particles interact by the nuclear and electromagnetic forces to
+produce additional particles in a cascade process. Pions will interact with air molecules via the
+strong force but some will spontaneously decay via the weak force into a muon plus a muon
+neutrino or an anti-muon neutrino. [1]
+\begin{equation} \pi^+ \rightarrow \mu^+ + \overline{\nu}_\mu \end{equation}
+\begin{equation} \pi^- \rightarrow \mu^- + \nu_\mu \end{equation}
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon01.png}
+  \caption{Cosmic ray cascade induced by a cosmic ray proton striking
+an air molecule nucleus. [1]}
+\end{figure}
+
+\subsubsection{Muons}
+Muons are the most abundant charged particles at sea level. They are produced high in the
+atmosphere, typically \unit{15}{\kilo\metre} and lose about \unit{2}{\giga\electronvolt} before reaching the ground due to ionization. The
+mean energy of muons at the ground is \unit{4}{\giga\electronvolt} [2]. They interact with matter via the weak and
+electromagnetic forces but not with the strong force. They decay via the weak force into an electron
+plus an electron neutrino or an anti-electron neutrino.
+\begin{equation} \mu^- \rightarrow e^- + \overline{\nu}_e + \nu_\mu \end{equation}
+\begin{equation} \mu^+ \rightarrow e^+ + \nu_e + \overline{\nu}_\mu \end{equation}
+
+The muon flux at sea level is about \unit{1}{muon\usk\rpsquare{\centi\metre}\usk\reciprocal\minute} [3] or 
+\unit{10000}{muons\usk\rpsquare\metre\usk\reciprocal\minute}. They are highly penetrating charged radiation. 
+A typical cosmic ray muon of energy \unit{3}{\giga\electronvolt} can penetrate more than 
+\unit{1000}{\gram\usk\rpsquare{\centi\metre}} (eg. 10 m of water). As muons pass through matter they either
+scatter if they have high energy or are absorbed if they have low energy. The angle at which they
+scatter depends on the atomic number Z (number of protons) of the material. As the atomic number
+of the material increases, the scattering angle increases. In a layer \unit{10}{\centi\metre} thick, a 
+\unit{3}{\giga\electronvolt} muon will scatter with an angle of \unit{2.3}{\milli\radian} in water, 
+\unit{11}{\milli\radian} in iron and \unit{20}{\milli\radian} in lead. [4]
+
+\subsubsection{Limitations of X-rays}
+X-ray radiography is successful in many areas but has limitations. X-rays are unable to penetrate
+dense objects that have a high atomic number. Multiple projections are needed in order to resolve a
+three-dimensional structure using X-rays and they also pose health risks from radiation. In X-ray
+radiography, absorption and scattering cause attenuation of the incident beam which determines
+the intensity of an image pixel. The maximum mean free path of photons is about \unit{25}{\gram\usk\rpsquare{\centi\metre}} for all
+materials which corresponds to \unit{2}{\centi\metre} of lead [4]. Even the most penetrating gamma rays are
+attenuated by an e-folding in \unit{2}{\centi\metre} of lead. A very large incident dose of radiation is needed to
+penetrate thicker objects and that is harmful for living organisms [5]. A different type of radiography
+must be used for thicker objects and it must be based on the interaction of charged particles with
+matter by multiple Coulomb scattering [4].
+
+\subsubsection{Muon tomography concept}
+Muon tomography is based on the multiple Coulomb scattering of muons as they pass through a
+material. Radiographs of objects of any thickness can be produced by using multiple scattering.
+Cosmic ray muons are passive and harmless radiation and allow radiograph of dense objects with no
+artificial dose of radiation such as X-rays or gamma rays. The scattering of muons differs significantly
+in three different groups of materials: low Z (water, plastic, concrete), medium Z (iron, copper) and
+high Z (lead, tungsten, uranium) [6]. Each muon carries information about the objects it has
+penetrated and the properties of these objects can be determined by measuring the scattering of
+multiple muons. High Z objects can be detected amongst typical low Z and medium Z objects. [3]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon02.png}
+  \caption{Muon tomography concept. The grey tracks are the muons going through air and the black
+tracks are the muons that penetrate a dense object. [3]}
+  \label{muon02}
+\end{figure}
+
+The muon tomography concept is illustrated above in Figure~\ref{muon02}. The position and angle of incoming
+muon tracks are provided by a set of two or more planes of muon detectors above and below the
+object. These detectors only detect vertically oriented muons. Side detectors could be used to
+detect horizontally oriented muons. The detectors above the object measure the position of incident
+muons in two orthogonal coordinates. The scattering of the muons that pass through the material
+depends on the type of the object. The detectors below the object measure the positions and angles
+of the scattered muons. The scattering angle of each muon is calculated from the corresponding
+incident and scattered measurements. The momentum is calculated from the slight scattering of
+muons in the detectors themselves. [3]
+
+\subsubsection{Simulations of muon tomography}
+Simulations of muon tomography are very promising and results can be obtained within a very short
+exposure time of approximately \unit{1}{\minute}. The GEANT4 Monte Carlo package is used for the simulations
+because it implements a complete, accurate and validated model for multiple scattering. A detailed
+GEANT4 simulation of a passenger van has been produced and reconstruction was achieved using
+two different methods: mean and median. [3]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon03.png}
+  \caption{Illustration of major objects in a simulated passenger van using GEANT4. The red block in
+the centre represents a \unit{10\times10\times10}{\cubic{\centi\metre}} solid piece of tungsten which is a high Z threat object. [3]}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics{pile01/muon04.png}
+  \caption{Reconstruction of \unit{1}{\minute} of simulation muon exposure of the passenger van using the
+mean method. [3]}
+  \label{muon04}
+\end{figure}
+\begin{figure}[h!]
+  \includegraphics{pile01/muon05.png}
+  \caption{Reconstruction of \unit{1}{\minute} of simulation muon exposure of the passenger van using the
+median method. [3]}
+  \label{muon05}
+\end{figure}
+
+The mean method of reconstruction shown on Figure~\ref{muon04} contains red spots scattered over the image.
+The median method shown on Figure~\ref{muon05} does not contain these effects. The denser components of
+the van (engine, battery, drive train) are shown as green (low Z) or blue (medium) but the high Z
+threat object stands out as red. The median method is clearly better. [3]
+
+A ray crossing algorithm has been developed that highlights locations where strongly scattered
+muons cross paths. The basis of the ray crossing algorithm is the fact that a high Z object produces
+many highly scattered rays which intersect in a small volume. A large depth of medium Z material
+can also produce highly scattered rays but these rays will spread over a larger volume. The algorithm
+was applied to a simulated scene of a \unit{6\times2.4\times2.4}{\cubic\metre} cargo container filled with \unit{12}{tons} of iron and
+three \unit{9\times9\times12}{\cubic{\centi\metre}} uranium bricks were buried within the iron. A cosmic ray exposure of \unit{1}{\minute} was
+simulated and the tracks were processed using the ray crossing algorithm. The results are shown
+below on Figure~\ref{muon06}. [6]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon06.png}
+  \caption{Ray crossing algorithm reconstructions of \unit{1}{\minute} of simulated muon radiography of a
+\unit{6\times2.4\times2.4}{\cubic\metre} cargo container filled with \unit{12}{tons} of iron and
+three \unit{9\times9\times12}{\cubic{\centi\metre}} uranium bricks (a) and without the uranium bricks (b). [6]}
+  \label{muon06}
+\end{figure}
+
+All three uranium bricks are clearly identified on Figure~\ref{muon06}a. The image without the uranium bricks is
+empty of any signal as shown on Figure~\ref{muon06}b. The ray crossing algorithm shows great promise in
+eliminating the scattering background. [6]
+
+Other simulations were also produced using a Monte Carlo simulation code and the results are
+shown below on Figure~\ref{muon07}.
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon07.png}
+  \caption{Muon radiograph of a complex target in a volume of \unit{9\times3\times5.5}{\cubic\metre}. The first object (a) is a
+large complex lead sculpture. The reconstructed image (b) shows much of the detail of the object
+and it’s based on \unit{1}{\minute} of exposure. The second object (c) consists of a \unit{4\times2.4\times2.4}{\cubic\metre} container with
+walls of thickness equivalent to \unit{3}{\milli\metre} of steel. There are 69 sheep made of water (shown in blue)
+inside the container with a body size of \unit{60\times30\times40}{\cubic{\centi\metre}} and three uranium bricks of 
+size \unit{9\times9\times12}{\cubic{\centi\metre}} (shown in black). The reconstructed image (d), based 
+on \unit{1}{\minute} of exposure, shows that the 3 uranium bricks stand out. The colour intensity in the two reconstructed 
+images corresponds to the significance of the signal. [5]}
+  \label{muon07}
+\end{figure}
+
+\subsubsection{Experimental results of muon tomography}
+There are a few prototype experimental muon tomography detectors that show excellent results
+which are consistent with the simulations.
+A small scale experimental detector system was developed in 2003 at the Los Alamos National
+Laboratory, Los Alamos, New Mexico [5]. A picture of the detector is shown below Figure~\ref{muon08}.
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon08.png}
+  \caption{Picture of experimental apparatus at the Los Alamos National Laboratory in 2003. There
+are four muon detectors labelled D1-D4 with a vertical spacing of \unit{27}{\centi\metre}. The detectors determine
+the positions and angles of the muons in two orthogonal coordinates (X and Y). The test object (W)
+was a tungsten cylinder of radius \unit{5.5}{\centi\metre} and height \unit{5.7}{\centi\metre}. A thick Lexan (L) plate of dimensions
+\unit{35\times60\times1}{\cubic{\centi\metre}} and steel support beams (B) were used to support the test object. [5]}
+  \label{muon08}
+\end{figure}
+
+Eight X and eight Y locations were measured for each muon by four ionizing radiation detectors
+contained in the detector stack. The two detectors on top measure the incoming muon track while
+the two detectors at the bottom measure the scattered track. Each delay line drift chamber detector
+had an active area of \unit{60\times60}{\square{\centi\metre}}. The detector was calibrated with no test object to determine the
+precision of the position measurement. A Windows based acquisition program was used to collect
+the data. The reconstruction was approximated using the following simple technique. Multiple
+scattered tracks were approximated to have only a single scattering event and the point of scatter
+was located by extrapolating the incident and scattered rays. A maximum likelihood technique was
+used to assign voxels (3D pixels) to each scattered muon. The reconstructed 3D image of the
+tungsten test object is shown below on Figure~\ref{muon09}. [5]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon09.png}
+  \caption{Test object reconstruction using 100\,000 muons. A volumetric image of \unit{1\times1\times1}{\cubic{\centi\metre}} voxels
+was reconstructed. The eight planes are horizontal slices near the middle of the volume, moving
+from top to bottom. Both the tungsten cylinder and the steel support beams are clearly visible. [5]}
+  \label{muon09}
+\end{figure}
+
+The data for the above image were collected over several hours because the detector was not fully
+optimised. An optimised detector with 100\% tracking efficiency and large solid angle could acquire
+the same data in approximately \unit{30}{\minute}. The test object and the test support beams can be clearly
+resolved using this long run. Considerably shorter runs could be used for a simple yes/no detection. [5]
+
+Another sub-scale prototype was built at the Los Alamos National Laboratory in 2006 called the
+Large Muon Tracker (LMT) which is 20’ tall. The design of this detector is very similar to the previous
+detector. It consists of 6 top and 6 bottom planes of drift tube detectors for each X and Y dimensions
+(24 planes in total) on a flexible frame. The top and bottom sections are separated by \unit{1.5}{\metre} to allow
+a large sampling region. X and Y tracks are fitted separately to find the slope and intercept of each
+dimension and combining them yields the 3D trajectory of the muon. A picture of LMT is shown
+below on Figure~\ref{muon10}. [7]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon10.png}
+  \caption{The Large Muon Tracker (LMT) prototype at the Los Alamos National Laboratory in 2006.
+The precise positions of muon tracks above and below the sampling region are determined by the
+overlapping X and Y detector planes. The new redundant detector planes will be used improve the
+tracking efficiency and quality. [7]}
+  \label{muon10}
+\end{figure}
+
+The prototype of LMT was completed and tested in 2008. A simple reconstruction technique was
+used to process the data. The sample volume of \unit{1.5\times1.5\times1.0}{\cubic\metre} was segmented into \unit{2\times2\times2}{\cubic{\centi\metre}}
+voxels. The median scattering angle was calculated for all muons whose trajectories intersected a
+voxel with an adjustable distance. The prototype was tested using a \unit{10\times10\times10}{\cubic{\centi\metre}} lead cube that
+represented the threat object and it was placed in the LMT along with a car engine and transmission.
+A photograph of the engine in the LMT is shown below on Figure~\ref{muon11}. [8]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon11.png}
+  \caption{Photograph of a car engine in the LMT at the Los Alamos National Laboratory in 2008. [8]}
+  \label{muon11}
+\end{figure}
+
+Data were collected for approximately \unit{160}{\minute} and have been analysed to reconstruct the images
+shown below on Figure~\ref{muon12}. The mean scattering angle is plotted for all trajectories that pass through
+each voxel. [8]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon12.png}
+  \caption{Mean scattering angle for a slice through the scene \unit{50}{\centi\metre} above the base plate. The left
+image shows the car engine, the middle image shows the engine with the lead cube and the right
+image shows the difference of the other two images. The lead block stands out dramatically. [8]}
+  \label{muon12}
+\end{figure}
+
+Another muon tomography prototype is located at the INFN National Laboratories of Legnaro,
+Padova, Italy. A volume of \unit{11}{\cubic\metre} can be inspected using the prototype which is ideal for cargo
+inspection. A picture of the prototype is shown below on Figure~\ref{muon13}. [9]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon13.png}
+  \caption{Muon tomography system prototype located at the INFN National Laboratories of
+Legnaro. [9]}
+  \label{muon13}
+\end{figure}
+
+Two Muon Barrel drift chambers of dimensions \unit{300\times250\times29}{\cubic{\centi\metre}}, built for the CMS experiment at
+CERN, were used for the experiment, separated by \unit{160}{\centi\metre}. A concrete and iron structure is
+supporting the chambers. There are two additional drift chambers underneath the bottom detector
+that will be used in the future as a momentum filter. The reconstruction procedure uses a List Mode
+Iterative Algorithm (LMIA) that process events one at a time instead of grouping similar events
+together. [9]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon14.png}
+  \caption{Test of the imaging capability of the prototype. The picture on the left shows the layout of
+iron bricks forming the word INFN and the picture on the right shows the result of the data analysis
+using the LMIA. The reconstructed image is very clear. [9]}
+  \label{muon14}
+\end{figure}
+
+The experiment was repeated using two lead blocks of dimensions \unit{10\times10\times20}{\cubic{\centi\metre}} and two iron
+blocks of dimensions \unit{10\times20\times20}{\cubic{\centi\metre}} placed on a support structure \unit{65}{\centi\metre} in the vertical direction. The
+3D reconstruction of this layout is shown below on Figure~\ref{muon15}.
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon15.png}
+  \caption{The left image is a sketch of the layout with the two lead and the two iron blocks. The
+darker blocks are the lead blocks. The right image shows the 3D view of the reconstructed image
+using the LMIA. [9]}
+  \label{muon15}
+\end{figure}
+
+The position of the blocks is reproduced correctly but there is finite spatial resolution in the
+reconstruction especially in the vertical direction. The reconstructed scattering density of the lead
+blocks is greater than that of the iron blocks. It’s straightforward to discriminate low Z or medium Z
+materials from high Z materials using this method. The problem with this method is that
+discrimination between high Z materials denser than iron is more difficult because of the non-
+linearity in the reconstructed scattering density. This means that the muon momentum has to be
+measured as well to allow a better material recognition and increase the statistical precision of the
+density measurement. [9]
+
+\subsubsection{Applications of muon tomography}
+Muon tomography could be used to protect the rail network from terrorism. The idea is to equip
+train stations with large muon detectors above and below. Density images can be produced very fast
+in a time scale of minutes. High density objects such as nail bombs and fissile materials will be easily
+identified. [10]
+
+It could also be used as a detection method of nuclear devices or material in vehicles and containers.
+An automobile sized counting station could be used to scan vehicles at border crossing. This would
+allow examination of every vehicle and shipping container crossing a border. It will require enough
+detectors to handle the traffic at the borders. The total traffic crossing the US -- Mexico and the US --
+Canada borders in 2008 was \(1.3\times10^8\) vehicles. Assuming a single muon tomography detector could
+analyse a vehicle within \unit{1}{\minute} and operates for 12 hours per day, then 500 detectors would be
+needed to handle the entire border crossing traffic. This would cost a total of 1.5 to 2 billion dollars
+but its negligible compared to the consequences of the detonation of a nuclear bomb. A picture of
+how it could be implemented at a border crossing is shown below on Figure~\ref{muon16}. [8]
+
+\begin{figure}[h!]
+  \includegraphics{pile01/muon16.png}
+  \caption{Schematic view of how a counting station might look. Vehicles would have to stop for
+approximately 20 seconds for the scan. [8]}
+  \label{muon16}
+\end{figure}
+
+Both methods could be used for nuclear dismantlement verification. The vehicle transporting the
+bomb for disarmament could be scanned at several stations during its journey to the dismantlement
+facilities. A single muon tomography detector at the dismantlement facility could be used to verify a
+small quantity of nuclear bombs. If there is a large number of bombs queued for verification then
+the idea of the train stations could be used. A room with muon detectors on the flood and the ceiling
+could be used to scan all of them at the same time.
 
 \end{document}
