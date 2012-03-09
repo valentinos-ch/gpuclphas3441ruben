@@ -878,6 +878,93 @@ The Vulnerability Assessment Team (VAT) at the Los Alamos National Laboratory ha
 researched issues associated with nuclear safeguards in the areas of transport security, intrusion
 detection and vulnerability assessments.
 
+Most organisations ignore or underestimate the insider threat which the security risk due to its 
+employees. [8] Motivations for an insider attack include revenge, greed, ideology, terrorism, 
+social engineering or even mental illness and periodic background checks should be used to reduce 
+the insider attacks. Common mistakes that organisations make regarding the insider threat are thinking 
+that low-level employees are not a threat, not testing if employees can be bribed, thinking that only 
+employees are insiders and having overconfidence in the polygraph test. [9] The IAEA does little or no 
+background check on its employees either before or after hiring, including nuclear inspectors. The 
+IAEA must trust its inspector’s judgement on whether treaty violations are occurring and the lack of 
+background checks puts the reliability of inspections at risk. Also IAEA inspectors are granted 
+diplomatic privileges and the position of an inspector could attract people who want to exploit 
+diplomatic status for terrorist or criminal activities. [8]
+
+Another security risk is the fact that people are poor observers and they don't realise it. Perceptual 
+blindness, also known as inattentional blindness, is the phenomenon of not being able to perceive things 
+which are in plain sight if you are focused on a specific visual task. Change blindness is also a kind of 
+perceptual blindness is the phenomenon of observers failing to notice changes, including blatant changes, 
+even when they are expected. This has serious implications for inspectors and security guards who inspect 
+seals, watch video monitors, operate safeguards equipment and guard gates. Inspectors and security guards 
+should be educated and trained on this and technology could be used to cover for perceptual weaknesses in 
+humans. [9]
+
+Confusing inventory with security leads to bad security. Inventory is counting and locating stuff and it 
+can detect innocent errors by insiders such as sending a shipment to the wrong location, but it’s not 
+designed to detect spoofing and deliberate nefarious attacks by insiders or outsiders. [10] Security is 
+meant to counter nefarious adversaries, both insiders and outsiders. [9] Inventory systems should not be 
+used as security systems. Examples of inventory systems used as security systems in nuclear safeguards 
+include using the Global Positioning System (GPS) for cargo security and using contact memory buttons 
+(CMBs) or radio frequency identification devices (RFIDs) for nuclear material control and accounting 
+(MC\&A). [10] Almost all nuclear applications use the civilian GPS signals and not the military signals. 
+The civilian GPS signals are unauthenticated, unencrypted so they are not secure and were never meant to 
+be used for security applications. GPS receivers can be easily spoofed or jammed using widely available 
+commercial GPS satellite simulators which can be easily purchased, rented or stolen. CMBs and RFIDs are 
+very useful for inventory but they are not designed to deal with nefarious adversaries. They are very 
+easy to lift, counterfeit, tamper with the reader or spoof the reader from a distance. [8] On the other 
+hand nuclear MC\&A may look like an inventory function since it involves counting and locating nuclear 
+assets but it is a security function meant to detect nuclear theft, tampering, diversion or espionage. 
+A nuclear MC\&A program or system should make significant attempts to deter or detect spoofing by a 
+nefarious adversary. [10]
+
+\subsubsection{Unconventional approaches to chain of custody}
+
+Conventional tamper detection methods are fundamentally flawed. A conventional seal must store the 
+information indicating that it has been opened until it is inspected but it’s too easy to hide or 
+erase this information or even make a counterfeit seal. A much better approach is to use the 
+``anti-evidence'' method. Information that tampering has not occurred (the anti-evidence) is stored 
+at the beginning when the seal is first installed. [8] If tampering is detected, this information, 
+which is usually 1 byte in length for electronic anti-evidence seals, is being erased [11]. 
+The inspector will look for anti-evidence during inspection and it is missing or it is incorrect 
+then tampering has occurred. If the anti-evidence is intact then the seal has not been opened. Only 
+the people who installed the seal know the anti-evidence information which is different for each seal 
+and changes if the seal is reused. The attacker will not know the anti-evidence information so he 
+cannot counterfeit, erase or hide anything. [8] It is also theoretically possible for the inspected 
+party to check the anti-evidence seal and send the anti-evidence to the inspectors without them being 
+present there. [11] This is very useful because inspectors might not be allowed to handle nuclear 
+material or weapons and might be limited to observing the facility personnel installing or removing 
+the seals. An example of an anti-evidence seal is the Time Trap, shown below on Figure~\ref{CoC2}, 
+which can be placed on the hasp of a door or container. It turns on its liquid crystal display when 
+entry has occurred and the display will alternate between the time that the entry has occurred and the 
+hash for that time. Each time has a different hash and only the people who installed it know the correct 
+hash for future times. When the seal detects entry, the future hash values are instantly erased so 
+the attackers cannot counterfeit the seal because they don't know what hash it should display. [8]
+
+\begin{figure}
+  \includegraphics{pile01/CoC2.png}
+  \caption{Working Time Trap prototype showing entry occurring at 13:22 on 3\textsuperscript{rd} 
+		   February 2005. The picture on the left shows the time that intrusion was detected and the 
+		   picture on the right shows the hash for that time. If the hash value is wrong or missing or 
+		   the time is different by a few minutes, then tampering has occurred. An on-board programmable 
+			microprocessor controls this anti-evidence seal and the entire device cost \$8. [8]}
+  \label{CoC2}
+\end{figure}
+
+The anti-evidence method can be used for real-time monitoring of nuclear material, including during 
+transport and this approach is called the ``Town Crier'' method. It does not send out an alarm when 
+intrusion is detected because the alarm signal can be easily blocked or jammed. Instead it sends a 
+periodic ``ALL OK'' byte called the bingo number. Only the monitoring system and the people listening 
+in know the correct bingo number at any given time and if the bingo number fails to arrive on time, 
+it indicates trouble. The probability of guessing one bingo number correctly is 1/256 (0.4\%) and the 
+probability of guessing two correctly is 1/65536 (0.002\%) so the attackers cannot counterfeit the bingo 
+number. It is a simple, low cost method that uses a very low bandwidth of 1 byte per minute, one-way 
+communication and provides high security since attackers gain nothing by blocking the signal. [11]
+
+Another method that could be used is colorimetry because color is very difficult property to accurately 
+reproduce. Inexpensive commercial color sensors can measure color accurately and they can be used as change 
+detectors for seals. Inspectors could also use them to check if the walls of a camera enclosure have been 
+cut open, then repaired and repainted to hide the intrusion. [11]
+
 \section{Detection Schemes}
 \subsection{Passive Detection}
 
