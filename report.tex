@@ -1,6 +1,6 @@
 \documentclass[twocolumn,a4paper]{article}
 \usepackage{mathtools}
-\usepackage{natbib}
+\usepackage[square]{natbib}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{SIunits}
@@ -736,13 +736,13 @@ storage facility's by 2020. [6]
 Chain of custody refers to the system of routines used to provide a high confidence level that a
 nuclear warhead will be delivered from its field deployment or storage location to the
 dismantlement facility and that the recovered nuclear material will be monitored until its disposition
-to make sure that it will not be reused [1]. Chain of custody includes the use of photography (X-ray
+to make sure that it will not be reused \citep{zarimpas2003}. Chain of custody includes the use of photography (X-ray
 or gamma ray images, optical pictures), seals and tags, visual surveillance or video, warhead
 authentication (detection and confirmation of nuclear or non-nuclear warhead) and information
 processing (data transmission and relay, data compression, encryption and decryption etc.). There
 are two categories of chain of custody: limited chain of custody of a specific dismantlement facility
 and full range chain of custody with continuous knowledge of the disarmament process and the total
-number of nuclear warheads. [2]
+number of nuclear warheads. \citep{wuwen2004}
 
 \subsubsection{Seals and Tags}
 A tag is a unique characteristic (`fingerprint') of an object or container that is used to unambiguously
@@ -761,7 +761,7 @@ tampering, safety and espionage concerns. Also some weapon containers cannot acc
 extra seals so the seals for nuclear disarmament will have to coexist with seals for safeguards and
 internal security. [3]
 
-Current technologies and technologies under development: [1]
+Current technologies and technologies under development: \citep{zarimpas2003}
 Reflective Particle Tags (RPT): Reflective particles are mixed into glue that is applied to the
 object being tagged. If the tag is illuminated by a point light source, particle reflections form a
 unique pattern to that tag and incident angle. A tag reader records the pattern of individual
@@ -823,11 +823,11 @@ surveillance provides a high confidence in the dismantlement process and establi
 between the involved countries. Comprehensive surveillance combined with seals and tags can
 constitute an in depth inspection system. Several technologies can be used for comprehensive
 surveillance such as video monitoring, sensor monitoring, photograph comparing, intrusion
-detection and satellite imaging. [2]
+detection and satellite imaging. \citep{wuwen2004}
 
 Video monitoring is widely used in international safeguards and domestic security and it plays an
 important role in preventing illegal activities and proving treaty compliant activities. It is one of the
-most widely used containment and surveillance techniques by the IAEA. [2] Modern digital imaging
+most widely used containment and surveillance techniques by the IAEA. \citep{wuwen2004} Modern digital imaging
 used by the IAEA includes single camera digital surveillance units such as the All-in-one System
 (ALIS), All-in-one Portable System (ALIP), Digital Single Camera Optical Surveillance System (DSOS)
 and multi-camera digital surveillance systems such as the Server Digital Image Surveillance System
@@ -853,7 +853,7 @@ Various sensors such as motion/acceleration, weight, acoustic, radioactive, magn
 temperature/humidity, impact force sensitive and vibration sensors can be combined to monitor
 nuclear warhead reduction and provide a high confidence. Most of these sensors are commercially
 available and can be used in an integrated monitoring system which is easy to understand,
-technically transparent and applicable by all parties. [2]
+technically transparent and applicable by all parties. \citep{wuwen2004}
 
 Photograph comparing is used to carefully examine recorded images of the objects being monitored
 and detect tamper activities. Drawing random marks or images near the monitored object and then
@@ -861,22 +861,109 @@ photograph it from all angles can enhance the photograph comparing method. It ca
 disputes because it requires specific interpretation, either algorithmic or artificial, and the picture
 taking process can be also affected by environmental elements so it is never used on its own. It is
 often embedded into tamper-indicating monitoring methods and used as a complimentary
-technique in nuclear disarmament. [2]
+technique in nuclear disarmament. \citep{wuwen2004}
 
 Intrusion detection is used in guarding nuclear warheads and uses microwave, capacity sensitive,
 weight detection, infrared beam and motion/acceleration sensors to detect unauthorised access.
 The technologies and intrusion detection methods are being continuously developed to increase the
-efficiency and reliability of intrusion detection. [2]
+efficiency and reliability of intrusion detection. \citep{wuwen2004}
 
 Satellite imaging is used to detect change of large facilities or objects and requires advanced space
 and electronic sensor technologies. It can integrate visual, multi-spectra, synthesized aperture radar
 (SAR), thermal/infrared and other photographic technologies into a comprehensive system to
-provide a meaning full picture of a specific area or object. [2]
+provide a meaning full picture of a specific area or object. \citep{wuwen2004}
 
 \subsubsection{Vulnerability in chain of custody}
 The Vulnerability Assessment Team (VAT) at the Los Alamos National Laboratory has extensively
 researched issues associated with nuclear safeguards in the areas of transport security, intrusion
 detection and vulnerability assessments.
+
+Most organisations ignore or underestimate the insider threat which the security risk due to its 
+employees. [8] Motivations for an insider attack include revenge, greed, ideology, terrorism, 
+social engineering or even mental illness and periodic background checks should be used to reduce 
+the insider attacks. Common mistakes that organisations make regarding the insider threat are thinking 
+that low-level employees are not a threat, not testing if employees can be bribed, thinking that only 
+employees are insiders and having overconfidence in the polygraph test. [9] The IAEA does little or no 
+background check on its employees either before or after hiring, including nuclear inspectors. The 
+IAEA must trust its inspector’s judgement on whether treaty violations are occurring and the lack of 
+background checks puts the reliability of inspections at risk. Also IAEA inspectors are granted 
+diplomatic privileges and the position of an inspector could attract people who want to exploit 
+diplomatic status for terrorist or criminal activities. [8]
+
+Another security risk is the fact that people are poor observers and they don't realise it. Perceptual 
+blindness, also known as inattentional blindness, is the phenomenon of not being able to perceive things 
+which are in plain sight if you are focused on a specific visual task. Change blindness is also a kind of 
+perceptual blindness is the phenomenon of observers failing to notice changes, including blatant changes, 
+even when they are expected. This has serious implications for inspectors and security guards who inspect 
+seals, watch video monitors, operate safeguards equipment and guard gates. Inspectors and security guards 
+should be educated and trained on this and technology could be used to cover for perceptual weaknesses in 
+humans. [9]
+
+Confusing inventory with security leads to bad security. Inventory is counting and locating stuff and it 
+can detect innocent errors by insiders such as sending a shipment to the wrong location, but it’s not 
+designed to detect spoofing and deliberate nefarious attacks by insiders or outsiders. [10] Security is 
+meant to counter nefarious adversaries, both insiders and outsiders. [9] Inventory systems should not be 
+used as security systems. Examples of inventory systems used as security systems in nuclear safeguards 
+include using the Global Positioning System (GPS) for cargo security and using contact memory buttons 
+(CMBs) or radio frequency identification devices (RFIDs) for nuclear material control and accounting 
+(MC\&A). [10] Almost all nuclear applications use the civilian GPS signals and not the military signals. 
+The civilian GPS signals are unauthenticated, unencrypted so they are not secure and were never meant to 
+be used for security applications. GPS receivers can be easily spoofed or jammed using widely available 
+commercial GPS satellite simulators which can be easily purchased, rented or stolen. CMBs and RFIDs are 
+very useful for inventory but they are not designed to deal with nefarious adversaries. They are very 
+easy to lift, counterfeit, tamper with the reader or spoof the reader from a distance. [8] On the other 
+hand nuclear MC\&A may look like an inventory function since it involves counting and locating nuclear 
+assets but it is a security function meant to detect nuclear theft, tampering, diversion or espionage. 
+A nuclear MC\&A program or system should make significant attempts to deter or detect spoofing by a 
+nefarious adversary. [10]
+
+\subsubsection{Unconventional approaches to chain of custody}
+
+Conventional tamper detection methods are fundamentally flawed. A conventional seal must store the 
+information indicating that it has been opened until it is inspected but it’s too easy to hide or 
+erase this information or even make a counterfeit seal. A much better approach is to use the 
+``anti-evidence'' method. Information that tampering has not occurred (the anti-evidence) is stored 
+at the beginning when the seal is first installed. [8] If tampering is detected, this information, 
+which is usually 1 byte in length for electronic anti-evidence seals, is being erased [11]. 
+The inspector will look for anti-evidence during inspection and it is missing or it is incorrect 
+then tampering has occurred. If the anti-evidence is intact then the seal has not been opened. Only 
+the people who installed the seal know the anti-evidence information which is different for each seal 
+and changes if the seal is reused. The attacker will not know the anti-evidence information so he 
+cannot counterfeit, erase or hide anything. [8] It is also theoretically possible for the inspected 
+party to check the anti-evidence seal and send the anti-evidence to the inspectors without them being 
+present there. [11] This is very useful because inspectors might not be allowed to handle nuclear 
+material or weapons and might be limited to observing the facility personnel installing or removing 
+the seals. An example of an anti-evidence seal is the Time Trap, shown below on Figure~\ref{CoC2}, 
+which can be placed on the hasp of a door or container. It turns on its liquid crystal display when 
+entry has occurred and the display will alternate between the time that the entry has occurred and the 
+hash for that time. Each time has a different hash and only the people who installed it know the correct 
+hash for future times. When the seal detects entry, the future hash values are instantly erased so 
+the attackers cannot counterfeit the seal because they don't know what hash it should display. [8]
+
+\begin{figure}
+  \includegraphics{pile01/CoC2.png}
+  \caption{Working Time Trap prototype showing entry occurring at 13:22 on 3\textsuperscript{rd} 
+		   February 2005. The picture on the left shows the time that intrusion was detected and the 
+		   picture on the right shows the hash for that time. If the hash value is wrong or missing or 
+		   the time is different by a few minutes, then tampering has occurred. An on-board programmable 
+			microprocessor controls this anti-evidence seal and the entire device cost \$8. [8]}
+  \label{CoC2}
+\end{figure}
+
+The anti-evidence method can be used for real-time monitoring of nuclear material, including during 
+transport and this approach is called the ``Town Crier'' method. It does not send out an alarm when 
+intrusion is detected because the alarm signal can be easily blocked or jammed. Instead it sends a 
+periodic ``ALL OK'' byte called the bingo number. Only the monitoring system and the people listening 
+in know the correct bingo number at any given time and if the bingo number fails to arrive on time, 
+it indicates trouble. The probability of guessing one bingo number correctly is 1/256 (0.4\%) and the 
+probability of guessing two correctly is 1/65536 (0.002\%) so the attackers cannot counterfeit the bingo 
+number. It is a simple, low cost method that uses a very low bandwidth of 1 byte per minute, one-way 
+communication and provides high security since attackers gain nothing by blocking the signal. [11]
+
+Another method that could be used is colorimetry because color is very difficult property to accurately 
+reproduce. Inexpensive commercial color sensors can measure color accurately and they can be used as change 
+detectors for seals. Inspectors could also use them to check if the walls of a camera enclosure have been 
+cut open, then repaired and repainted to hide the intrusion. [11]
 
 \section{Detection Schemes}
 \subsection{Passive Detection}
@@ -1328,5 +1415,28 @@ facilities. A single muon tomography detector at the dismantlement facility coul
 small quantity of nuclear bombs. If there is a large number of bombs queued for verification then
 the idea of the train stations could be used. A room with muon detectors on the flood and the ceiling
 could be used to scan all of them at the same time.
+
+\begin{thebibliography}
+\bibitem{zarimpas2003}
+  N.~Zarimpas, \emph{Transparency in Nuclear Warheads and Materials}, 2003
+
+\bibitem{wuwen2004}
+  Z.~Wuwen, \emph{Promoting Nuclear Warhead Reductions: Regimes, Approaches and Technologies}, 
+  Center for International and Security Studies at Maryland, 2004
+
+\bibitem{nuclearTamperSeals2001}
+  R.G.~Johnston, \emph{Tamper-Indicating Seals for Nuclear Disarmament and Hazardous Waste Management}, 
+  Science \& Global Security \textbf{9}, 93, 2001
+...
+\bibitem{equipmentIAEAinspectors2002}
+  IAEA, \emph{New Safeguards Equipment Systems: Teaming IAEA Inspectors with Technology}, 2002, 
+  Available from: \url{http://www.iaea.org/Publications/Booklets/TeamingInspectors/teaming_inspectors.pdf} 
+  [Accessed February 29 2012]
+...
+\bibitem{handbookSecBlunders2010}
+  R.G.~Johnston and J.S.~Warner, \emph{Handbook of security blunders}, Proceedings of the 
+  51\textsuperscript{st} Annual INMM Meeting, 2010
+
+\end{thebibliography}
 
 \end{document}
