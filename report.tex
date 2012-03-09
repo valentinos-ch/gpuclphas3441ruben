@@ -16,6 +16,8 @@
 \date{10\textsuperscript{th} March 2012}
 \maketitle
 
+\onecolumn
+
 \section*{Executive summary}
 \subsection*{The Context}
 Why do we Verify?  We verify to assure confidence. We have a
@@ -66,7 +68,9 @@ Valentino's Muon Tomography
 (What are the Strengths weaknesses opportunities and threats?)
 \subsection*{Final Summary}
 
+\newpage
 \tableofcontents
+\twocolumn
 
 \section{Introduction}
 
@@ -162,22 +166,28 @@ capability to destroy entire cities, murdering hundreds of thousands
 of people in the process. These devices have no place in a peaceful
 world and bring limitations to human development.
 
-\begin{tabular}{|c|c|c|c|}
-  \hline
-  Country 		& Active 	& Total 	& CTBT 	\\
-   			& Warheads 	& Warheads 	& Status \\
-  \hline
-  USA 		 	& 1950 	& 8500 		& Signatory 	\\
-  Russia 		& 2430 	& 11000 	& Ratifier 	\\
-  UK 			& 160 	& 225 		& Ratifier 	\\
-  France		& 290	& 300		& Ratifier	\\
-  China			& 180	& 240		& Signatory	\\
-  India			&	& 90		& Non-Signatory	\\
-  Pakistan		&	& 100		& Non-Signatory \\
-  North Korea		&	& \(<\)10 	& Non-Signatory \\
-  Israel		&	& 140		& Signatory	\\
-  \hline
-\end{tabular}
+\begin{table}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Country	& Active& Total		& CTBT	\\
+    \hline
+    USA		& 1950 	& 8500		& S	\\
+    Russia	& 2430 	& 11000		& R	\\
+    UK		& 160 	& 225		& R	\\
+    France	& 290	& 300		& R	\\
+    China	& 180	& 240		& S	\\
+    India	&	& 90		& N	\\
+    Pakistan	&	& 100		& N	\\
+    North Korea	&	& \(<\)10	& N	\\
+    Israel	&	& 140		& S	\\
+    \hline
+  \end{tabular}
+  \caption{Number of nuclear warheads, active and total, by
+    country. Status of ratification of the Comprehensive Test Ban
+    Treaty (CTBT) is also shown. S denotes Signatory, R for
+    Ratified and N for Non-Signatory.}
+  \label{tab:NWSwarheadsCTBT}
+\end{table}
 
 \subsubsection{International Atomic Energy Agency (IAEA)}
 The International Atomic Energy Agency (IAEA) is an international
@@ -249,7 +259,7 @@ York, when it was signed by 71 States, including five of the eight
 then nuclear-capable states. As of January 2012, 156 states have
 ratified the CTBT and another 26 states have signed but not ratified
 it, including China, Egypt, Iran, Israel and the United States. India,
-North Korea and Pakistan have yet to sign it (see table about NWS).
+North Korea and Pakistan have yet to sign it (see Table~\ref{tab:NWSwarheadsCTBT}).
 
 There have been several other treaties with the aim of encouraging
 disarmament, with varying degrees of success. Limited success was
@@ -1076,8 +1086,8 @@ send the anti-evidence to the inspectors without them being present
 there. [11] This is very useful because inspectors might not be
 allowed to handle nuclear material or weapons and might be limited to
 observing the facility personnel installing or removing the seals. An
-example of an anti-evidence seal is the Time Trap, shown below on
-Figure~\ref{CoC2}, which can be placed on the hasp of a door or
+example of an anti-evidence seal is the Time Trap, shown in
+Figure~\ref{fig:CoC2}, which can be placed on the hasp of a door or
 container. It turns on its liquid crystal display when entry has
 occurred and the display will alternate between the time that the
 entry has occurred and the hash for that time. Each time has a
@@ -1096,7 +1106,7 @@ seal because they don't know what hash it should display. [8]
     tampering has occurred. An on-board programmable microprocessor
     controls this anti-evidence seal and the entire device cost
     \$8. [8]}
-  \label{CoC2}
+  \label{fig:CoC2}
 \end{figure}
 
 The anti-evidence method can be used for real-time monitoring of
@@ -1395,22 +1405,22 @@ and medium Z objects. [3]
   \caption{Muon tomography concept. The grey tracks are the muons
     going through air and the black tracks are the muons that
     penetrate a dense object. [3]}
-  \label{muon02}
+  \label{fig:muon02}
 \end{figure}
 
-The muon tomography concept is illustrated above in
-Figure~\ref{muon02}. The position and angle of incoming muon tracks
-are provided by a set of two or more planes of muon detectors above
-and below the object. These detectors only detect vertically oriented
-muons. Side detectors could be used to detect horizontally oriented
-muons. The detectors above the object measure the position of incident
-muons in two orthogonal coordinates. The scattering of the muons that
-pass through the material depends on the type of the object. The
-detectors below the object measure the positions and angles of the
-scattered muons. The scattering angle of each muon is calculated from
-the corresponding incident and scattered measurements. The momentum is
-calculated from the slight scattering of muons in the detectors
-themselves. [3]
+The muon tomography concept is illustrated in
+Figure~\ref{fig:muon02}. The position and angle of incoming muon
+tracks are provided by a set of two or more planes of muon detectors
+above and below the object. These detectors only detect vertically
+oriented muons. Side detectors could be used to detect horizontally
+oriented muons. The detectors above the object measure the position of
+incident muons in two orthogonal coordinates. The scattering of the
+muons that pass through the material depends on the type of the
+object. The detectors below the object measure the positions and
+angles of the scattered muons. The scattering angle of each muon is
+calculated from the corresponding incident and scattered
+measurements. The momentum is calculated from the slight scattering of
+muons in the detectors themselves. [3]
 
 \subsubsection{Simulations of muon tomography}
 Simulations of muon tomography are very promising and results can be
@@ -1432,18 +1442,18 @@ two different methods: mean and median. [3]
   \includegraphics[width=\linewidth]{pile01/muon04.png}
   \caption{Reconstruction of \unit{1}{\minute} of simulation muon
     exposure of the passenger van using the mean method. [3]}
-  \label{muon04}
+  \label{fig:muon04}
 \end{figure}
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon05.png}
   \caption{Reconstruction of \unit{1}{\minute} of simulation muon
     exposure of the passenger van using the median method. [3]}
-  \label{muon05}
+  \label{fig:muon05}
 \end{figure}
 
-The mean method of reconstruction shown on Figure~\ref{muon04}
+The mean method of reconstruction shown in Figure~\ref{fig:muon04}
 contains red spots scattered over the image.  The median method shown
-on Figure~\ref{muon05} does not contain these effects. The denser
+in Figure~\ref{fig:muon05} does not contain these effects. The denser
 components of the van (engine, battery, drive train) are shown as
 green (low Z) or blue (medium) but the high Z threat object stands out
 as red. The median method is clearly better. [3]
@@ -1459,7 +1469,7 @@ container filled with \unit{12}{tons} of iron and three
 \unit{9\times9\times12}{\cubic{\centi\metre}} uranium bricks were
 buried within the iron. A cosmic ray exposure of \unit{1}{\minute} was
 simulated and the tracks were processed using the ray crossing
-algorithm. The results are shown below on Figure~\ref{muon06}. [6]
+algorithm. The results are shown in Figure~\ref{fig:muon06}. [6]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon06.png}
@@ -1469,17 +1479,17 @@ algorithm. The results are shown below on Figure~\ref{muon06}. [6]
     with \unit{12}{tons} of iron and three
     \unit{9\times9\times12}{\cubic{\centi\metre}} uranium bricks (a)
     and without the uranium bricks (b). [6]}
-  \label{muon06}
+  \label{fig:muon06}
 \end{figure}
 
-All three uranium bricks are clearly identified on
-Figure~\ref{muon06}a. The image without the uranium bricks is empty of
-any signal as shown on Figure~\ref{muon06}b. The ray crossing
+All three uranium bricks are clearly identified in
+Figure~\ref{fig:muon06}a. The image without the uranium bricks is empty of
+any signal as shown in Figure~\ref{fig:muon06}b. The ray crossing
 algorithm shows great promise in eliminating the scattering
 background. [6]
 
 Other simulations were also produced using a Monte Carlo simulation
-code and the results are shown below on Figure~\ref{muon07}.
+code and the results are shown in Figure~\ref{fig:muon07}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon07.png}
@@ -1498,7 +1508,7 @@ code and the results are shown below on Figure~\ref{muon07}.
     exposure, shows that the 3 uranium bricks stand out. The colour
     intensity in the two reconstructed images corresponds to the
     significance of the signal. [5]}
-  \label{muon07}
+  \label{fig:muon07}
 \end{figure}
 
 \subsubsection{Experimental results of muon tomography}
@@ -1506,7 +1516,7 @@ There are a few prototype experimental muon tomography detectors that
 show excellent results which are consistent with the simulations.  A
 small scale experimental detector system was developed in 2003 at the
 Los Alamos National Laboratory, Los Alamos, New Mexico [5]. A picture
-of the detector is shown below Figure~\ref{muon08}.
+of the detector is shown in Figure~\ref{fig:muon08}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon08.png}
@@ -1520,7 +1530,7 @@ of the detector is shown below Figure~\ref{muon08}.
     thick Lexan (L) plate of dimensions
     \unit{35\times60\times1}{\cubic{\centi\metre}} and steel support
     beams (B) were used to support the test object. [5]}
-  \label{muon08}
+  \label{fig:muon08}
 \end{figure}
 
 Eight X and eight Y locations were measured for each muon by four
@@ -1537,7 +1547,7 @@ only a single scattering event and the point of scatter was located by
 extrapolating the incident and scattered rays. A maximum likelihood
 technique was used to assign voxels (3D pixels) to each scattered
 muon. The reconstructed 3D image of the tungsten test object is shown
-below on Figure~\ref{muon09}. [5]
+in Figure~\ref{fig:muon09}. [5]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon09.png}
@@ -1547,7 +1557,7 @@ below on Figure~\ref{muon09}. [5]
     near the middle of the volume, moving from top to bottom. Both the
     tungsten cylinder and the steel support beams are clearly
     visible. [5]}
-  \label{muon09}
+  \label{fig:muon09}
 \end{figure}
 
 The data for the above image were collected over several hours because
@@ -1567,7 +1577,7 @@ flexible frame. The top and bottom sections are separated by
 \unit{1.5}{\metre} to allow a large sampling region. X and Y tracks
 are fitted separately to find the slope and intercept of each
 dimension and combining them yields the 3D trajectory of the muon. A
-picture of LMT is shown below on Figure~\ref{muon10}. [7]
+picture of LMT is shown in Figure~\ref{fig:muon10}. [7]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon10.png}
@@ -1577,7 +1587,7 @@ picture of LMT is shown below on Figure~\ref{muon10}. [7]
     overlapping X and Y detector planes. The new redundant detector
     planes will be used improve the tracking efficiency and
     quality. [7]}
-  \label{muon10}
+  \label{fig:muon10}
 \end{figure}
 
 The prototype of LMT was completed and tested in 2008. A simple
@@ -1589,18 +1599,18 @@ intersected a voxel with an adjustable distance. The prototype was
 tested using a \unit{10\times10\times10}{\cubic{\centi\metre}} lead
 cube that represented the threat object and it was placed in the LMT
 along with a car engine and transmission.  A photograph of the engine
-in the LMT is shown below on Figure~\ref{muon11}. [8]
+in the LMT is shown in Figure~\ref{fig:muon11}. [8]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon11.png}
   \caption{Photograph of a car engine in the LMT at the Los Alamos
     National Laboratory in 2008. [8]}
-  \label{muon11}
+  \label{fig:muon11}
 \end{figure}
 
 Data were collected for approximately \unit{160}{\minute} and have
-been analysed to reconstruct the images shown below on
-Figure~\ref{muon12}. The mean scattering angle is plotted for all
+been analysed to reconstruct the images shown in
+Figure~\ref{fig:muon12}. The mean scattering angle is plotted for all
 trajectories that pass through each voxel. [8]
 
 \begin{figure}
@@ -1610,20 +1620,20 @@ trajectories that pass through each voxel. [8]
     the car engine, the middle image shows the engine with the lead
     cube and the right image shows the difference of the other two
     images. The lead block stands out dramatically. [8]}
-  \label{muon12}
+  \label{fig:muon12}
 \end{figure}
 
 Another muon tomography prototype is located at the INFN National
 Laboratories of Legnaro, Padova, Italy. A volume of
 \unit{11}{\cubic\metre} can be inspected using the prototype which is
-ideal for cargo inspection. A picture of the prototype is shown below
-on Figure~\ref{muon13}. [9]
+ideal for cargo inspection. A picture of the prototype is shown in
+Figure~\ref{fig:muon13}. [9]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon13.png}
   \caption{Muon tomography system prototype located at the INFN
     National Laboratories of Legnaro. [9]}
-  \label{muon13}
+  \label{fig:muon13}
 \end{figure}
 
 Two Muon Barrel drift chambers of dimensions
@@ -1643,15 +1653,14 @@ similar events together. [9]
     word INFN and the picture on the right shows the result of the
     data analysis using the LMIA. The reconstructed image is very
     clear. [9]}
-  \label{muon14}
 \end{figure}
 
 The experiment was repeated using two lead blocks of dimensions
 \unit{10\times10\times20}{\cubic{\centi\metre}} and two iron blocks of
 dimensions \unit{10\times20\times20}{\cubic{\centi\metre}} placed on a
 support structure \unit{65}{\centi\metre} in the vertical
-direction. The 3D reconstruction of this layout is shown below on
-Figure~\ref{muon15}.
+direction. The 3D reconstruction of this layout is shown in
+Figure~\ref{fig:muon15}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon15.png}
@@ -1659,7 +1668,7 @@ Figure~\ref{muon15}.
     and the two iron blocks. The darker blocks are the lead
     blocks. The right image shows the 3D view of the reconstructed
     image using the LMIA. [9]}
-  \label{muon15}
+  \label{fig:muon15}
 \end{figure}
 
 The position of the blocks is reproduced correctly but there is finite
@@ -1669,7 +1678,7 @@ greater than that of the iron blocks. It’s straightforward to
 discriminate low Z or medium Z materials from high Z materials using
 this method. The problem with this method is that discrimination
 between high Z materials denser than iron is more difficult because of
-the non- linearity in the reconstructed scattering density. This means
+the non-linearity in the reconstructed scattering density. This means
 that the muon momentum has to be measured as well to allow a better
 material recognition and increase the statistical precision of the
 density measurement. [9]
@@ -1694,14 +1703,14 @@ detectors would be needed to handle the entire border crossing
 traffic. This would cost a total of 1.5 to 2 billion dollars but its
 negligible compared to the consequences of the detonation of a nuclear
 bomb. A picture of how it could be implemented at a border crossing is
-shown below on Figure~\ref{muon16}. [8]
+shown in Figure~\ref{fig:muon16}. [8]
 
 \begin{figure}
   \includegraphics[width=\linewidth]{pile01/muon16.png}
   \caption{Schematic view of how a counting station might
     look. Vehicles would have to stop for approximately 20 seconds for
     the scan. [8]}
-  \label{muon16}
+  \label{fig:muon16}
 \end{figure}
 
 Both methods could be used for nuclear dismantlement verification. The
@@ -1733,7 +1742,7 @@ the ceiling could be used to scan all of them at the same time.
 ...
 
 \bibitem{equipmentIAEAinspectors2002} 
-  IAEA, \emph{New Safeguards
+  IAEA (International Atomic Energy Agency), \emph{New Safeguards
   Equipment Systems: Teaming IAEA Inspectors with Technology}, 2002,
   Available from: \\
   \url{http://www.iaea.org/Publications/Booklets/TeamingInspectors/teaming_inspectors.pdf}\\
