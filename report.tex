@@ -1,6 +1,6 @@
 \documentclass[twocolumn,a4paper]{article}
 \usepackage{mathtools}
-\usepackage[square,numbers]{natbib}
+\usepackage[square]{natbib}
 \usepackage{graphicx}
 \usepackage[unicode,pagebackref,colorlinks]{hyperref}
 \usepackage{SIunits}
@@ -1722,39 +1722,10 @@ number of bombs queued for verification then the idea of the train
 stations could be used. A room with muon detectors on the flood and
 the ceiling could be used to scan all of them at the same time.
 
-\begin{thebibliography}{9}
-\phantomsection
-\addcontentsline{toc}{section}{References}
-\bibitem{zarimpas2003} 
-  N.~Zarimpas, \emph{Transparency in Nuclear
-  Warheads and Materials}, 2003
+\citep{nuclearTamperSeals2001,equipmentIAEAinspectors2002,handbookSecBlunders2010}
 
-\bibitem{wuwen2004} 
-  Z.~Wuwen, \emph{Promoting Nuclear Warhead
-  Reductions: Regimes, Approaches and Technologies}, Center for
-  International and Security Studies at Maryland, 2004
-
-\bibitem{nuclearTamperSeals2001} 
-  R.G.~Johnston,
-  \emph{Tamper-Indicating Seals for Nuclear Disarmament and Hazardous
-    Waste Management}, Science \& Global Security \textbf{9}, 93, 2001
-
-...
-
-\bibitem{equipmentIAEAinspectors2002} 
-  IAEA (International Atomic Energy Agency), \emph{New Safeguards
-  Equipment Systems: Teaming IAEA Inspectors with Technology}, 2002,
-  Available from: \\
-  \url{http://www.iaea.org/Publications/Booklets/TeamingInspectors/teaming_inspectors.pdf}\\
-  (Accessed 29\textsuperscript{th} February 2012)
-
-...
-
-\bibitem{handbookSecBlunders2010} 
-  R.G.~Johnston and J.S.~Warner,
-  \emph{Handbook of security blunders}, Proceedings of the
-  51\textsuperscript{st} Annual INMM Meeting, 2010
-
-\end{thebibliography}
+\renewcommand{\refname}{\vspace*{-1em}\section{Bibliography}\vspace*{-1em}}
+\bibliographystyle{plainnat}
+\bibliography{references}
 
 \end{document}
