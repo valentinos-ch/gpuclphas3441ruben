@@ -16,22 +16,22 @@ Process
   Disposal and Containment
   Down-Blending
 
-Detection Physics
-  Passive Detection
-    Neutron & Gamma
-  Active Detection
-    Neutron & Gamma
-  Muon Tomography
-
-Detection Implementation
-  Passive Detectors
-    Neutron
-    Gamma
-  Active Detectors
-    Radiography
-    Neutron
-    Gamma
-  Muon Tomography
+Detection
+  Theory
+    Passive Detection
+      Neutron & Gamma
+    Active Detection
+      Neutron & Gamma
+    Muon Tomography
+  Implementation
+    Passive Detectors
+      Neutron
+      Gamma
+    Active Detectors
+      Radiography
+      Neutron
+      Gamma
+    Muon Tomography
 
 Confidence of Verification
 
