@@ -5,6 +5,15 @@
 \usepackage[unicode,pagebackref,colorlinks]{hyperref}
 \usepackage{SIunits}
 
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0ex}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\normalfont\normalsize\bfseries}}
+\makeatother
+\stepcounter{secnumdepth}
+\stepcounter{tocdepth}
+
 \begin{document}
 \title{Verification of Nuclear Disarmament \\
 Challenges and Prospects}
@@ -49,9 +58,8 @@ rates, there should be an inflection at 2002 *
 \tableofcontents
 \twocolumn
 
-\section{2nd}
-TODO: Wrap up
 \section{Introduction}
+TODO: Intro
 \section{Background}
 Weapons-grade nuclear material explode just by putting them
 together. The limits at which the material begin to sustain the chain
@@ -163,15 +171,15 @@ will have to address later.
 \end{figure}
 
 From the above consideration, it is obvious that a bomb could be made
-by simply assembling two hemispheres of near-criticality pieces. This
-is the essence of the ``gun-type'' nuclear fission bombs. The design,
-however, is incredibly inefficient TODO:CITATION, requiring a lot of
-extremely expensive highly enriched (even for weapons-grade work)
-nuclear material and wasting most of them in the explosion. The
-explosion would disperse the nuclear material too quickly for much
-reaction to happen. Hence, this design is absent from current
-stockpiles. Thus, this commission sees no point in belabouring this
-type of bomb any further.
+by simply assembling two near-criticality pieces. This is the essence
+of the ``gun-type'' nuclear fission bombs. The design, however, is
+incredibly inefficient TODO:CITATION, requiring a lot of extremely
+expensive highly enriched (even for weapons-grade work) nuclear
+material and wasting most of them in the explosion. The explosion
+would disperse the nuclear material too quickly for much reaction to
+happen. Hence, this design is absent from current stockpiles. Thus,
+this commission sees no point in belabouring this type of bomb any
+further.
 
 \begin{figure}
   \caption{A typical implosion type fission bomb}
@@ -223,22 +231,348 @@ regular name suffices. The difference is small enough that confusion
 is of little consequence.
 
 \subsubsection{Working Model}
-
+TODO: Working Model from Fetter
 \subsection{Politics}
-As can be expected from causality, the present situation is formed
-through the various historical developments. A concise summary of the
-relevant events is presented; Where appropriate, current events are
-also included. The International Atomic Energy Agency (IAEA), is
-introduced as the standard organisation. Because the problem is one of
-worldwide cooperation, international treaties form the foundation upon
-which disarmament verification is performed. It shall be shown that
-the treaties of relevance lead to the formation of information
-barriers, and their consequences are briefly touched upon. Finally,
-some non-political issues that are of importance are iterated. 
+There is currently no known opposition to the consensus that nuclear
+weapon stockpiles are too large, at least among the First World
+countries. This commission believes that this agreement is based upon
+solid foundations due to a number of reasons, of which only risk
+management and economics are considered in this report. The relevant
+arguments and numbers are presented in section TODO: CROSS-REF. 
 
+To have a more meaningful discussion about the subject, a brief
+outline of the current Nuclear-Weapon States (NWS) and political
+situation has to be given. The International Atomic Energy Agency
+(IAEA), will be introduced as the standard organisation. Because the
+problem is one of worldwide cooperation, international treaties form
+the foundation upon which disarmament verification is performed. It
+shall be shown that the treaties of relevance lead to the formation of
+information barriers, and their consequences are briefly touched
+upon. Finally, some non-political issues that are of importance are
+iterated. TODO: TRUST; TERRORISM. Notes?
 
+\subsubsection{Nuclear-Weapon States (NWS)}
+Although exact numbers are not known, there are around 20\,000 to
+40\,000 nuclear weapons in the world. \citep{worldNuclearForces2011,
+  norris2010}
 
-\section{1st}
+\begin{table}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Country	& Active& Total		& CTBT	\\
+    \hline
+    US		& 1950 	& 8500		& S	\\
+    Russia	& 2430 	& 11000		& R	\\
+    UK		& 160 	& 225		& R	\\
+    France	& 290	& 300		& R	\\
+    China	& 180	& 240		& S	\\
+    India	&	& 90		& N	\\
+    Pakistan	&	& 100		& N	\\
+    North Korea	&	& \(<\)10	& N	\\
+    Israel	&	& 140		& S	\\
+    \hline
+  \end{tabular}
+  \caption{Number of nuclear warheads, active and total, by
+    country. Status of ratification of the Comprehensive Test Ban
+    Treaty (CTBT) is also shown. S denotes Signatory, R means Ratified
+    and N for Non-Signatory. TODO:CITATION}
+  \label{tab:NWSwarheadsCTBT}
+\end{table}
+
+From the viewpoint of risk management, each nuclear weapon represents
+a risk of accidental detonation that has to be weighed against the
+potential benefits that its ownership may bring: mainly deterrence and
+diplomatic power. As can be seen in Table~\ref{tab:NWSwarheadsCTBT},
+the current stockpiles, in at least the United States (US) and Russia,
+are much too big to support either of the two arguments. Thus, they
+provide great risk for negligible benefits and should rightly be
+lowered. Terrorists present a complication to the decision-making
+process, but the judgement of excess is not altered. The changes
+needed to discuss terrorism are discussed in section TODO: CROSS-REF.
+
+The arguments presented deserve further scrutiny on many
+counts. Table~\ref{tab:NWSwarheadsCTBT} can be roughly separated into
+groups: US and Russia who are certainly overloaded with nuclear
+warheads, states with hundreds to thousands of nuclear weapons, and
+``Rogue'' states of varying degrees of destructive
+probability. Diplomatically, this way of grouping the states seem to
+make some sense -- the ``Rogue'' states group enjoy an increase in
+diplomatic power thanks to their ownership of nuclear weaponry; of the
+states in the middle group that tends to already be of enough
+influence to be indifferent to an increase or decrease in their
+respective stockpiles, only China is threatening to increase her
+stockpiles, and is thus the only one to leverage off the diplomatic
+power. China's excuse for doing so is the overly large stockpiles by
+US and Russia; Indeed, low or non-nuclear-weapon states like North
+Korea and Iran cite the same excuse among other reasons. 
+
+However, the grouping may be misleading. India and Pakistan, on the
+borderline of ``rogue-ness'' may be better considered as
+``mischievous'' since they do not pose a serious threat to First World
+countries. The tensions between those two countries, on the other
+hand, are real. In a similar way, Israel possess nuclear warheads for
+deterrence reasons and is thus not considered as rogue by the First
+World, a designation that will certainly be disputed in the Middle
+East. For China that does pose a real threat, there may be some
+pressures to apply the rogue label. That, however, is not justified
+because, whatever threat China poses, she is unlikely to be a nuclear
+threat from deterrence theory (large target; a lot to lose).
+
+When considered from the perspective of deterrence, the grouping does
+an even worse job at being relevant. The standard argument is that the
+spreading of nuclear weaponry would deter conflict through considering
+Mutually Assured Destruction (MAD). By that argument, every NWS should
+have joined in so as to deter every other state, and groupings should
+not occur, or should at least occur similar to the Allied-Axis split
+of World War II. In reality, policymakers have had to take each
+country's unique circumstances and targets into account. 
+
+Little of the above are really relevant to the issue of disarmament
+verification. However, policymakers should be aware of the issues
+surrounding deterrence theory. Although the US administration is still
+firmly centred upon deterrence, the theory had neither been proved nor
+proved applicable. TODO:CITATION Ironically, a contradiction applies
+here: If the MAD argument were true, then it ought to have prevented
+the Cold War arms race that had produced the clearly excessive nuclear
+stockpiles in the US and Russia that is commissioning this very
+report! Realistically, nuclear deterrence is simply regular deterrence
+with much larger stakes; Flaws in the defence called deterrence had
+been known since antiquity, and high stakes failed to stop people from
+playing Russian Roulette, so it is quite a curiosity to observe the
+widespread belief in the magical flawlessness of the union of the two.
+It should also be noted that, when terrorism is introduced in section
+TODO: CROSS-REF, the argument would weaken even further. 
+
+Economically, the matters are just as lopsided. In the
+21\textsuperscript{st} century around \$50 billion a year, or 10\%
+of the annual US military budget, is spent on nuclear
+weapons. \citep{USspending} The US spent \$5.8 trillion on nuclear
+weapons between the early 1940s and 1996. Trident, the United
+Kingdom's (UK) nuclear weapons system, costs up to \$4 billion a
+year to run, and plans to replace it will cost \$154 billion. It has
+been estimated that worldwide costs exceeded \$1 trillion for
+2010--2011. \citep{worldSpending} This should be compared to the
+estimate that the cost of implementing a dismantlement program for
+processing Plutonium and Highly Enriched Uranium (HEU) into
+non-weapons-grade material would cost just \$7 billion per year for
+ten years. \citep{worldSafe} This minimal amount, in comparison, is
+equivalent to less than half of unaccountable spending in the Pentagon
+over the last decade, 0.09\% of current world military spending, or
+25\% of the \$28 billion spent every year to keep nuclear weapons
+secure.
+
+\subsubsection{International Atomic Energy Agency (IAEA)}
+The IAEA is an international organisation established on the
+29\textsuperscript{th} of July 1957 as an autonomous organisation
+through its own international treaty, the IAEA Statute, and reports to
+both the United Nations General Assembly and Security Council. It
+serves as an intergovernmental forum for scientific and technical
+cooperation in the peaceful use of nuclear technology and nuclear
+power worldwide. The programmes of the IAEA encourage the development
+of the peaceful applications of nuclear technology, provide
+international safeguards against misuse of nuclear technology and
+nuclear materials, and promote nuclear safety (including radiation
+protection) and nuclear security standards and their implementation.
+
+The missions of the IAEA are decided upon based on the needs and
+interests of its Member States, strategic plans and the vision
+embodied in the IAEA Statute. There are three main areas that the IAEA
+works in: Safety and Security, Science and Technology, and Safeguards
+and Verification. Within these areas the IAEA has, as its core
+missions and objectives, encouraging member states to use nuclear
+power peacefully, introducing and enforcing safeguards to verify that
+nuclear energy is only used for non-military purposes, and promoting
+high standards for nuclear safety.
+
+The IAEA executes these missions by inspecting existing nuclear
+facilities to ensure their peaceful and safe use, providing
+information needed to ensure the safety and security of nuclear
+facilities, and acting as a hub for the various fields of science
+involved in the peaceful applications of nuclear technology.
+
+Because there is only one international organisation dealing with
+nuclear technology, and that everything related to nuclear technology
+links to it, the IAEA is easily able to deliberate on any technical
+issues. Issues do not need to be sent across many different
+organisations and hence do not incur inefficiencies of bureaucratic
+red-tape. Policymakers also like the fact that it is easy to secure
+and monitor the central organisation against the leakage of sensitive
+information.
+
+However, the centralisation is not without disadvantages. Being a
+large and monolithic organisation, it is difficult to check if
+internal information barriers are working. Furthermore, the IAEA is an
+overstretched and underpowered organisation. Mainly a civilian outfit,
+it is difficult for the IAEA to command any influence in military
+affairs, a tight bind that is worsened by the political quagmire in
+the United Nations General Assembly and Security Council that the IAEA
+relies upon. Understaffed and underfunded on top of underpowered,
+there had been calls for alternative organisations to be established
+in order to lessen its load. For the purposes of disarmament
+verification, this commission is without preference between
+empowerment of the IAEA and establishment of new organisations, as
+long as the problem is not allowed to fester in the status quo. Sadly,
+this commission is not under any illusions that the abandonment of the
+status quo is likely.
+
+\subsubsection{Treaties}
+As had been mentioned, disarmament verification is mainly an
+international cooperation problem. As such, international treaties
+form a substantial part of any serious attempt at a solution. Central
+to the discussion of nuclear treaties is the fact that NWS consider
+the implementation of nuclear weaponry as national security secrets
+and thus are reluctant to divulge. These concerns lead to the
+formation of information barriers that are enshrined in the treaties.
+
+There are two treaties that are most relevant to the disarmament
+verification process today. Namely, they are the Non-Proliferation
+Treaty (NPT) and the Comprehensive Nuclear Test-Ban Treaty (CTBT)
+discussed below. A brief historical overview of the various treaties
+is provided in TODO: Appendix.
+
+There is also no known opposition to the erection of information
+barriers in the context of nuclear weaponry. It shall be seen,
+however, that the height of the information barriers (summarised in
+TODO: CROSS-REF) are set so high as to effectively cripple the
+disarmament verification process.
+
+\paragraph{Non-Proliferation Treaty (NPT)}
+The NPT is a landmark international treaty whose objective is to
+prevent the spread of nuclear weapons and weapons technology, to
+promote cooperation in the peaceful uses of nuclear energy and to
+further the goal of achieving nuclear disarmament and general and
+complete disarmament. The NPT represents the only binding commitment
+in a multilateral treaty to the goal of disarmament by the NWS. There
+have been several other treaties with the aim of encouraging
+disarmament, with varying degrees of success.
+
+Limited success was achieved with the signing of the Partial Test Ban
+Treaty in 1963, which banned nuclear tests in the atmosphere,
+underwater and in space, but neither France nor China signed
+it. However, after an 80 to 19 vote in the US Senate meant that the
+treaty was still ratified by the United States. Opened for signature
+in 1968, the NPT entered into force in 1970. On 11\textsuperscript{th}
+May 1995, it was extended indefinitely. A total of 190 parties have
+joined the NPT, including the five NWS. More countries have ratified
+the NPT than any other arms limitation and disarmament agreement, a
+testament to the significance of NPT. Recalling the determination
+expressed by the Parties to the 1963 Treaty banning nuclear weapons
+tests in the atmosphere, in outer space and under water in its
+Preamble, its goal is to achieve the discontinuance of all test
+explosions of nuclear weapons for all time and to continue
+negotiations to this end.
+
+Other goals of the NPT include the easing of international tension and
+the strengthening of trust between States in order to facilitate the
+cessation of the manufacture of nuclear weapons, the liquidation of
+all their existing stockpiles, and the elimination from national
+arsenals of nuclear weapons and the means of their delivery pursuant
+to a Treaty on general and complete disarmament under strict and
+effective international control. \citep{statement2005}
+
+The NPT was a major step towards the non-proliferation of nuclear
+weapons. This particular treaty decreed the prohibition of possessing,
+manufacturing or acquiring nuclear weapons or other nuclear explosive
+devices for non-nuclear weapon states. It committed all signatories,
+including nuclear weapon states, to the goal of total nuclear
+disarmament. However, India, Pakistan and Israel have declined to
+ratify the NPT. Their grounds for doing so were that the treaty is
+fundamentally discriminatory; it places limitations on states that do
+not have nuclear weapons but does not attempt to restrict weapons
+development by those who are declared nuclear weapons states.
+
+\paragraph{Comprehensive Test-Ban Treaty (CTBT)}
+On 10\textsuperscript{th} September 1996 the CTBT was adopted by the
+United Nations General Assembly; on the 24\textsuperscript{th} of
+September 1996 it then opened for signature in New York, when it was
+signed by 71 States, including five of the eight then nuclear-capable
+states. As of January 2012, 156 states have ratified the CTBT and
+another 26 states have signed but not ratified it, including China,
+Egypt, Iran, Israel and the US. India, North Korea and
+Pakistan have yet to sign it (see Table~\ref{tab:NWSwarheadsCTBT}).
+
+Due to the political climate of the next few decades after the signing
+of the NPT, very little progress was made in nuclear disarmament until
+1991. But, that year, an amendment conference was held to discuss the
+proposal of converting to a treaty that bans all nuclear-weapon
+tests. The UN General Assembly gave it strong support, leading to
+negotiations for the CTBT beginning in 1993. It took three years of
+intense effort and work to draft the CTBT text and its two annexes,
+but a consensus could not be reached on the adoption of the text in
+the Conference on Disarmament (in which negotiations were being
+held). Under the direction of the Australian Prime Minister John
+Howard and Foreign Minister Alexander Downer, the text of a draft
+resolution was submitted to the United Nations General Assembly in New
+York. The CTBT was finally adopted by a large majority, exceeding
+two-thirds of the General Assembly's Membership on the
+10\textsuperscript{th} of September 1996.
+
+\subsubsection{Important Notes}
+There are some notable omissions in the above discussion that needs to
+be addressed. One of which is the new emphasis on terrorism that many
+are acutely concerned with. Another omission that has to be filled in
+is an overview of the information barrier set up by the
+treaties. Finally, this commission emphasises the original reason for
+the entire disarmament verification process: Trust.
+
+Public attention has recently gathered around terrorism, thanks to the
+September 11\textsuperscript{th} attacks. There are benefits and
+problems with this new-found emphasis. One problem that stands out is
+the unbalanced attention it is receiving. Terrorism is neither a new
+threat nor an unknown one. Traditional risk management techniques have
+already taken it into account: Usually under random risks, even if it
+is not especially noted. As such, the issue brings little change to
+the national security strategies that countries already use.
+
+On the other hand, the attention on terrorism has already brought much
+needed critical evaluations to the strategic decision-making
+process. The numbers used in traditional risk management to account
+for randomness and terrorism have not been justified nor really
+studied, since not much is known about the issue. New security
+challenges are also presented by the fact that non-state terrorist
+groups in possession of nuclear weapons are conceptually outside the
+bounds of a deterrent strategy. The sudden increase in the criticisms
+of deterrence theory is particularly hinting; Whether it is hinting at
+a fad or a failure of the collective decision-making process to
+critically evaluate risk, this commission shall not speculate.
+
+There are, however, other aspects of terrorism that are relevant to
+this commission. For one, the likelihood that non-state terrorists
+will come into possession of nuclear weaponry is increasing, so the
+need for disarmament is also increasing. As mentioned before, each
+nuclear weapon presents itself as a liability in this case. Not only
+is this the case, each place in which nuclear materials are handled,
+be it production, storage, inspection or equipment, represents a
+risk. This interferes with the deterrence theory in yet another
+disastrous way. On one hand, deterrence theory dictates that nuclear
+weaponry be spread out over many small pockets so that they cannot be
+easily deactivated by enemy forces. On the other hand, many small
+pockets make it probable that accidents and slip-ups occur.
+
+TODO: Information barrier description. How many bombs.
+
+Finally, this commission would like to remind policymakers of the
+central reason for the purpose of disarmament verification. Whereas
+this report has already outlined many reasons in favour of
+disarmament, none of the above manage to describe the true reason for
+disarmament \emph{verification}. By considering the fact that there is
+no real obstacle for countries to unilaterally disarm their
+stockpiles, it is obvious that the sole reason for verifying
+disarmament is to convince other countries to do the same i.e. to gain
+their trust. There are many other pressures in the decision-making
+process relevant to disarmament verification, and policymakers should
+take care not to jeopardise the accumulation of trust.
+
+Indeed, just like the sensitivities of the nuclear process, it is
+difficult to convey the seriousness of the threat to the accumulation
+of trust. TODO: Show information barrier is untrustworthy.
+
+TODO: sectionise the 3 points?
+\subsection{Summary}
+TODO: Summary of Background.
+
+\section{Process}
+
 \section{Introduction}
 
 \subsection{Facts on Nuclear Weapons}
@@ -333,8 +667,8 @@ electric power and convert the fuel into a form that cannot be used in
 nuclear weapons again. \citep{moxFuel, feiveson2011, nature2009}
 
 \subsubsection{Nuclear Weapons States}
-Although exact numbers are not known, there are around 20,000 to
-40,000 nuclear weapons in the world. \citep{worldNuclearForces2011,
+Although exact numbers are not known, there are around 20\,000 to
+40\,000 nuclear weapons in the world. \citep{worldNuclearForces2011,
   norris2010} These weapons have the capability to destroy entire
 cities, murdering hundreds of thousands of people in the
 process. These devices have no place in a peaceful world and bring
@@ -359,8 +693,8 @@ limitations to human development.
   \caption{Number of nuclear warheads, active and total, by
     country. Status of ratification of the Comprehensive Test Ban
     Treaty (CTBT) is also shown. S denotes Signatory, R means Ratified
-    and N for Non-Signatory.**REF HERE?}
-  \label{tab:NWSwarheadsCTBT}
+    and N for Non-Signatory. TODO:CITATION}
+%  \label{tab:NWSwarheadsCTBT}
 \end{table}
 
 \subsubsection{International Atomic Energy Agency (IAEA)}
@@ -462,7 +796,7 @@ resolution was submitted to the United Nations General Assembly in New
 York. The CTBT was finally adopted by a large majority, exceeding
 two-thirds of the General Assembly's Membership on 10 September 1996.
 
-U.S. President Barack Obama in April 2010 called for the world's
+US President Barack Obama in April 2010 called for the world's
 nuclear weapon arsenal to be vastly reduced. He labelled the thousands
 of remaining weapons ``the most dangerous legacy of the Cold War.''
 For this to be achieved would require cooperation because the Nuclear
@@ -2440,7 +2774,7 @@ policy taken by many of the other NWS e.g. UK, France.
 
 \section{Conclusion}
 The recommendation from this report is to set up a department within 
-the IARA that would be responsible for creating a universal design 
+the IAEA that would be responsible for creating a universal design 
 of nuclear weapon dismantlement facility and overseeing the 
 dismantlement process. Nations wishing to dismantle nuclear 
 weapons in these facilities would have neutral inspectors observing

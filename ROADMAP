@@ -4,11 +4,11 @@ Background
   Preliminary Physics
     Working Model
   Politics
-    TODO:NAME
+    NWS
     IAEA
     Treaties
-    Information Barrier
-    Non-Political 
+    Important Notes
+  Summary
 
 Process
   Overview
@@ -17,13 +17,14 @@ Process
   Dismantlement
   Disposal and Containment
   Down-Blending
+  Information Barrier
 
 Detection
   Theory
     Passive Detection
-      Neutron & Gamma
+      Neutron \& Gamma
     Active Detection
-      Neutron & Gamma
+      Neutron \& Gamma
     Muon Tomography
   Implementation
     Passive Detectors
@@ -38,3 +39,5 @@ Detection
 Confidence of Verification
 
 Conclusion
+
+Appendix I: History of Treaties
